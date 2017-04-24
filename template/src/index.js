@@ -65,9 +65,9 @@ function recover(rawTx, v, r, s) {
  */
 
 function sign(transaction, privateKey, toObject) {
-  if (typeof transaction !== 'object' || transaction === null) { throw new Error(`[ethjs-signer] transaction input must be a type 'object', got '${typeof(transaction)}'`); }
-  if (typeof privateKey !== 'string') { throw new Error('[ethjs-signer] private key input must be a string'); }
-  if (!privateKey.match(/^(0x)[0-9a-fA-F]{64}$/)) { throw new Error('[ethjs-signer] invalid private key value, private key must be a prefixed hexified 32 byte string (i.e. "0x..." 64 chars long).'); }
+  if (typeof transaction !== 'object' || transaction === null) { throw new Error(`[ETHJS_MODULE_TEMPLATE_NAME] transaction input must be a type 'object', got '${typeof(transaction)}'`); }
+  if (typeof privateKey !== 'string') { throw new Error('[ETHJS_MODULE_TEMPLATE_NAME] private key input must be a string'); }
+  if (!privateKey.match(/^(0x)[0-9a-fA-F]{64}$/)) { throw new Error('[ETHJS_MODULE_TEMPLATE_NAME] invalid private key value, private key must be a prefixed hexified 32 byte string (i.e. "0x..." 64 chars long).'); }
 
   const raw = [];
 
@@ -87,14 +87,14 @@ function sign(transaction, privateKey, toObject) {
 
     // Fixed-width field
     if (fieldInfo.length && value.length !== fieldInfo.length && value.length > 0) {
-      throw new Error(`[ethjs-signer] while signing raw transaction, invalid '${fieldInfo.name}', invalid length should be '${fieldInfo.length}' got '${value.length}'`);
+      throw new Error(`[ETHJS_MODULE_TEMPLATE_NAME] while signing raw transaction, invalid '${fieldInfo.name}', invalid length should be '${fieldInfo.length}' got '${value.length}'`);
     }
 
     // Variable-width (with a maximum)
     if (fieldInfo.maxLength) {
       value = stripZeros(value);
       if (value.length > fieldInfo.maxLength) {
-        throw new Error(`[ethjs-signer] while signing raw transaction, invalid '${fieldInfo.name}' length, the max length is '${fieldInfo.maxLength}', got '${value.length}'`);
+        throw new Error(`[ETHJS_MODULE_TEMPLATE_NAME] while signing raw transaction, invalid '${fieldInfo.name}' length, the max length is '${fieldInfo.maxLength}', got '${value.length}'`);
       }
     }
 

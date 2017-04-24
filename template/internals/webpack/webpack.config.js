@@ -1,7 +1,7 @@
 var webpack = require('webpack'); // eslint-disable-line
 
 var env = process.env.NODE_ENV;   // eslint-disable-line
-var filename = 'ethjs-signer';      // eslint-disable-line
+var filename = 'ETHJS_MODULE_TEMPLATE_NAME';      // eslint-disable-line
 var library = 'ethSigner';          // eslint-disable-line
 var config = {                    // eslint-disable-line
   entry: [

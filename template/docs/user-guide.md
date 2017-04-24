@@ -1,11 +1,11 @@
 # User Guide
 
-All information for developers using `ethjs-signer` should consult this document.
+All information for developers using `ETHJS_MODULE_TEMPLATE_NAME` should consult this document.
 
 ## Install
 
 ```
-npm install --save ethjs-signer
+npm install --save ETHJS_MODULE_TEMPLATE_NAME
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save ethjs-signer
 const HttpProvider = require('ethjs-provider-http');
 const Eth = require('ethjs-query');
 const eth = new Eth(HttpProvider('http://localhost:8545'));
-const sign = require('ethjs-signer');
+const sign = require('ETHJS_MODULE_TEMPLATE_NAME');
 
 const address = '0x0F6af8F8D7AAD198a7607C96fb74Ffa02C5eD86B';
 const privateKey = '0xecbcd9838f7f2afa6e809df8d7cdae69aa5dfc14d563ee98e97effd3f6a652f2';
@@ -35,7 +35,7 @@ eth.getTransactionCount(address).then((nonce) => {
 
 ### sign
 
-[index.js:ethjs-signer](../../../blob/master/src/index.js "Source code on GitHub")
+[index.js:ETHJS_MODULE_TEMPLATE_NAME](../../../blob/master/src/index.js "Source code on GitHub")
 
 Intakes a raw transaction object and private key, outputs either a signed transaction hex string (by default) or a raw signed array of Buffer values (if specified). The hexified string payload can be used in conjunction with methods like `eth_sendRawTransaction`.
 
@@ -48,7 +48,7 @@ Intakes a raw transaction object and private key, outputs either a signed transa
 Result output signed tx payload **String|Object**.
 
 ```js
-const sign = require('ethjs-signer').sign;
+const sign = require('ETHJS_MODULE_TEMPLATE_NAME').sign;
 
 console.log(sign({ gas: 300000, data: '0x' }, '0x..privte key'));
 
@@ -61,7 +61,7 @@ console.log(sign({ from: '0x..', gas: '0x...', data: '0x' }, '0x..privte key', t
 
 ### recover
 
-[index.js:ethjs-signer](../../../blob/master/src/index.js "Source code on GitHub")
+[index.js:ETHJS_MODULE_TEMPLATE_NAME](../../../blob/master/src/index.js "Source code on GitHub")
 
 Intakes a rawTransaction hex string or Buffer instance, the recovery param (Number), and the transaction signature r (Buffer) and s (Buffer) values. Returns the public key as a Buffer instance for the signers account.
 
@@ -75,8 +75,8 @@ Intakes a rawTransaction hex string or Buffer instance, the recovery param (Numb
 Result output public key **Buffer**.
 
 ```js
-const recover = require('ethjs-signer').recover;
-const sign = require('ethjs-signer').sign;
+const recover = require('ETHJS_MODULE_TEMPLATE_NAME').recover;
+const sign = require('ETHJS_MODULE_TEMPLATE_NAME').sign;
 const stripHexPrefix = require('strip-hex-prefix');
 const generate = require('ethjs-account').generate;
 const publicToAddress = require('ethjs-account').publicToAddress;
@@ -105,10 +105,10 @@ if (address == testAccount.address) {
 
 ## Browser Builds
 
-`ethjs` provides production distributions for all of its modules that are ready for use in the browser right away. Simply include either `dist/ethjs-signer.js` or `dist/ethjs-signer.min.js` directly into an HTML file to start using this module. Note, an `ethSigner` object is made available globally.
+`ethjs` provides production distributions for all of its modules that are ready for use in the browser right away. Simply include either `dist/ETHJS_MODULE_TEMPLATE_NAME.js` or `dist/ETHJS_MODULE_TEMPLATE_NAME.min.js` directly into an HTML file to start using this module. Note, an `ethSigner` object is made available globally.
 
 ```html
-<script type="text/javascript" src="ethjs-signer.min.js"></script>
+<script type="text/javascript" src="ETHJS_MODULE_TEMPLATE_NAME.min.js"></script>
 <script type="text/javascript">
 ethSigner(...);
 </script>
@@ -125,15 +125,15 @@ https://polyfill.io/
 Version: webpack 2.1.0-beta.15
 Time: 1756ms
               Asset    Size  Chunks             Chunk Names
-    ethjs-signer.js  361 kB       0  [emitted]  main
-ethjs-signer.js.map  443 kB       0  [emitted]  main
+    ETHJS_MODULE_TEMPLATE_NAME.js  361 kB       0  [emitted]  main
+ETHJS_MODULE_TEMPLATE_NAME.js.map  443 kB       0  [emitted]  main
   [44] multi main 28 bytes {0} [built]
     + 44 hidden modules
                 
 Version: webpack 2.1.0-beta.15
 Time: 7583ms
               Asset    Size  Chunks             Chunk Names
-ethjs-signer.min.js  181 kB       0  [emitted]  main
+ETHJS_MODULE_TEMPLATE_NAME.min.js  181 kB       0  [emitted]  main
   [44] multi main 28 bytes {0} [built]
     + 44 hidden modules
 ```

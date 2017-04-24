@@ -1,0 +1,22 @@
+{
+  "name": "ethjs-template",
+  "version": "1.0.0",
+  "description": "A utility for creating ethjs-style modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethjs",
+    "ethereum",
+    "boilerplate"
+  ],
+  "author": "Dan Finlay <dan@danfinlay.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "replace": "^0.3.0"
+  },
+  "bin": {
+    "ethjs-template": "./clone.sh"
+  }
+}

@@ -1,17 +1,17 @@
 # Developer Guide
 
-All information regarding contributing to and progressing `ethjs-signer` module can be found in this document.
+All information regarding contributing to and progressing `ETHJS_MODULE_TEMPLATE_NAME` module can be found in this document.
 
 ## Install
 
 ```
-npm install --save ethjs-signer
+npm install --save ETHJS_MODULE_TEMPLATE_NAME
 ```
 
 ## Install from Source
 
 ```
-git clone http://github.com/ethjs/ethjs-signer
+git clone http://github.com/ethjs/ETHJS_MODULE_TEMPLATE_NAME
 npm install
 ```
 
@@ -61,7 +61,7 @@ The build staging for this module is as follows:
 All module source code is found in the `src` directory. All module helper scripts can be found in the `scripts` folder. These will not need to be touched, and are purely configuration for this repository.
 
 ```
-./ethjs-signer
+./ETHJS_MODULE_TEMPLATE_NAME
   ./.github
   ./dist
   ./lib
@@ -111,7 +111,7 @@ Across all `ethjs-` repos, we enforce mandatory travis-ci and coveralls testing.
 
 ## Contributing
 
-Please help better the ecosystem by submitting issues and pull requests. We need all the help we can get to build the absolute best linting standards and utilities. We follow the AirBNB linting standard. Please read more about contributing to `ethjs-signer` in the `.github/CONTRIBUTING.md`.
+Please help better the ecosystem by submitting issues and pull requests. We need all the help we can get to build the absolute best linting standards and utilities. We follow the AirBNB linting standard. Please read more about contributing to `ETHJS_MODULE_TEMPLATE_NAME` in the `.github/CONTRIBUTING.md`.
 
 ## Licence
 

@@ -1,32 +1,32 @@
-## ethjs-signer
+## ETHJS_MODULE_TEMPLATE_NAME
 
 <div>
   <!-- Dependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-signer">
-    <img src="https://david-dm.org/ethjs/ethjs-signer.svg"
+  <a href="https://david-dm.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME">
+    <img src="https://david-dm.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME.svg"
     alt="Dependency Status" />
   </a>
 
   <!-- devDependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-signer#info=devDependencies">
-    <img src="https://david-dm.org/ethjs/ethjs-signer/dev-status.svg" alt="devDependency Status" />
+  <a href="https://david-dm.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME#info=devDependencies">
+    <img src="https://david-dm.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME/dev-status.svg" alt="devDependency Status" />
   </a>
 
   <!-- Build Status -->
-  <a href="https://travis-ci.org/ethjs/ethjs-signer">
-    <img src="https://travis-ci.org/ethjs/ethjs-signer.svg"
+  <a href="https://travis-ci.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME">
+    <img src="https://travis-ci.org/ethjs/ETHJS_MODULE_TEMPLATE_NAME.svg"
     alt="Build Status" />
   </a>
 
   <!-- NPM Version -->
-  <a href="https://www.npmjs.org/package/ethjs-signer">
-    <img src="http://img.shields.io/npm/v/ethjs-signer.svg"
+  <a href="https://www.npmjs.org/package/ETHJS_MODULE_TEMPLATE_NAME">
+    <img src="http://img.shields.io/npm/v/ETHJS_MODULE_TEMPLATE_NAME.svg"
     alt="NPM version" />
   </a>
 
   <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/ethjs/ethjs-signer">
-    <img src="https://coveralls.io/repos/github/ethjs/ethjs-signer/badge.svg" alt="Test Coverage" />
+  <a href="https://coveralls.io/r/ethjs/ETHJS_MODULE_TEMPLATE_NAME">
+    <img src="https://coveralls.io/repos/github/ethjs/ETHJS_MODULE_TEMPLATE_NAME/badge.svg" alt="Test Coverage" />
   </a>
 
   <!-- Javascript Style -->
@@ -42,7 +42,7 @@ A simple Ethereum signing and recovery utility.
 ## Install
 
 ```
-npm install --save ethjs-signer
+npm install --save ETHJS_MODULE_TEMPLATE_NAME
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ npm install --save ethjs-signer
 const HttpProvider = require('ethjs-provider-http');
 const Eth = require('ethjs-query');
 const eth = new Eth(HttpProvider('http://localhost:8545'));
-const sign = require('ethjs-signer').sign;
+const sign = require('ETHJS_MODULE_TEMPLATE_NAME').sign;
 
 const address = '0x0F6af8F8D7AAD198a7607C96fb74Ffa02C5eD86B';
 const privateKey = '0xecbcd9838f7f2afa6e809df8d7cdae69aa5dfc14d563ee98e97effd3f6a652f2';
@@ -83,14 +83,14 @@ recover  <Function  (Object|String, Number, Object, Object) : (Object)>
 
 ## Contributing
 
-Please help better the ecosystem by submitting issues and pull requests to `ethjs-signer`. We need all the help we can get to build the absolute best linting standards and utilities. We follow the AirBNB linting standard and the unix philosophy.
+Please help better the ecosystem by submitting issues and pull requests to `ETHJS_MODULE_TEMPLATE_NAME`. We need all the help we can get to build the absolute best linting standards and utilities. We follow the AirBNB linting standard and the unix philosophy.
 
 ## Guides
 
-You'll find more detailed information on using `ethjs-signer` and tailoring it to your needs in our guides:
+You'll find more detailed information on using `ETHJS_MODULE_TEMPLATE_NAME` and tailoring it to your needs in our guides:
 
 - [User guide](docs/user-guide.md) - Usage, configuration, FAQ and complementary tools.
-- [Developer guide](docs/developer-guide.md) - Contributing to `ethjs-signer` and writing your own code and coverage.
+- [Developer guide](docs/developer-guide.md) - Contributing to `ETHJS_MODULE_TEMPLATE_NAME` and writing your own code and coverage.
 
 ## Help out
 
@@ -99,20 +99,20 @@ There is always a lot of work to do, and will have many rules to maintain. So pl
 - Create, enhance, and debug ethjs rules (see our guide to ["Working on rules"](./github/CONTRIBUTING.md)).
 - Improve documentation.
 - Chime in on any open issue or pull request.
-- Open new issues about your ideas for making `ethjs-signer` better, and pull requests to show us how your idea works.
+- Open new issues about your ideas for making `ETHJS_MODULE_TEMPLATE_NAME` better, and pull requests to show us how your idea works.
 - Add new tests to *absolutely anything*.
 - Create or contribute to ecosystem tools.
 - Spread the word!
 
 Please consult our [Code of Conduct](CODE_OF_CONDUCT.md) docs before helping out.
 
-We communicate via [issues](https://github.com/ethjs/ethjs-signer/issues) and [pull requests](https://github.com/ethjs/ethjs-signer/pulls).
+We communicate via [issues](https://github.com/ethjs/ETHJS_MODULE_TEMPLATE_NAME/issues) and [pull requests](https://github.com/ethjs/ETHJS_MODULE_TEMPLATE_NAME/pulls).
 
 ## Important documents
 
 - [Changelog](CHANGELOG.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
-- [License](https://raw.githubusercontent.com/ethjs/ethjs-signer/master/LICENSE)
+- [License](https://raw.githubusercontent.com/ethjs/ETHJS_MODULE_TEMPLATE_NAME/master/LICENSE)
 
 ## Licence
 
