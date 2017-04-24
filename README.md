@@ -11,7 +11,11 @@ npm install -g ethjs-template
 
 ## Usage
 
-`ethjs-template ethjs-your-module-name`
+```
+ethjs-template ETHJS_MODULE_TO_CLONE NEW_MODULE_NAME
+```
+
+`ethjs-template ethjs-signer ethjs-your-module-name`
 
 This will create a folder named `your-module-name` in the current folder, clone and install `ethjs-signer` inside of it, change all the names to your module's name, install the dependencies, and then run `npm init` to ask you about any other changes to make.
 
