@@ -4,7 +4,10 @@ A node.js script for creating an [Ethjs](https://github.com/ethjs) style module.
 
 ## Installation
 
-`npm install -g ethjs-template`
+```
+npm install -g replace
+npm install -g ethjs-template
+```
 
 ## Usage
 
