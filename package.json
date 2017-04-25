@@ -12,11 +12,22 @@
     "boilerplate"
   ],
   "author": "Dan Finlay <dan@danfinlay.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "replace": "^0.3.0"
   },
   "bin": {
     "ethjs-template": "./clone.sh"
-  }
+  },
+  "dependencies": {
+    "replace": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ethjs/ethjs-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ethjs/ethjs-template/issues"
+  },
+  "homepage": "https://github.com/ethjs/ethjs-template#readme"
 }
