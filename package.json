@@ -1,14 +1,15 @@
 {
-  "name": "ethjs-template",
+  "name": "vapjs-template",
+  "namespace": "vapjs",
   "version": "2.0.0",
-  "description": "A utility for creating ethjs-style modules.",
+  "description": "A utility for creating vapjs-style modules.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ethjs",
-    "ethereum",
+    "vapjs",
+    "vapory",
     "boilerplate"
   ],
   "author": "Dan Finlay <dan@danfinlay.com>",
@@ -17,17 +18,17 @@
     "replace": "^0.3.0"
   },
   "bin": {
-    "ethjs-template": "./clone.sh"
+    "vapjs-template": "./clone.sh"
   },
   "dependencies": {
     "replace": "^0.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ethjs/ethjs-template.git"
+    "url": "git+ssh://git@github.com/vapjs/vapjs-template.git"
   },
   "bugs": {
-    "url": "https://github.com/ethjs/ethjs-template/issues"
+    "url": "https://github.com/vapjs/vapjs-template/issues"
   },
-  "homepage": "https://github.com/ethjs/ethjs-template#readme"
+  "homepage": "https://github.com/vapjs/vapjs-template#readme"
 }
